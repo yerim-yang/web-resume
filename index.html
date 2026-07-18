@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양예림 | IT강사 · AI 사무자동화 전문가</title>
+    <meta name="description" content="AI 에이전트를 활용한 사무자동화 전문 IT강사 황인철의 디지털 명함 및 이력서입니다.">
+
+    <!-- Open Graph (카카오톡, 페이스북 등에서 링크 공유 시 미리보기) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="황인철 | IT강사 · AI 사무자동화 전문가">
+    <meta property="og:description" content="AI 에이전트를 활용하여 업무 시간을 90% 단축하는 사무자동화 전문 IT강사의 디지털 명함입니다.">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="황인철 디지털 명함">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter/X 카드 (트위터에서 링크 공유 시 미리보기) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="황인철 | IT강사 · AI 사무자동화 전문가">
+    <meta name="twitter:description" content="AI 에이전트를 활용하여 업무 시간을 90% 단축하는 사무자동화 전문 IT강사의 디지털 명함입니다.">
+    <meta name="twitter:image" content="og-image.png">
+
+    <!-- 파비콘 (브라우저 탭에 표시되는 작은 아이콘) -->
+    <link rel="icon" type="image/png" href="avatar.png">
+
+    <!-- Google Fonts: Pretendard + Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 오로라 리본 배경 -->
+    <div class="aurora-wrap">
+        <div class="aurora-ribbon aurora-ribbon-1"></div>
+        <div class="aurora-ribbon aurora-ribbon-2"></div>
+        <div class="aurora-ribbon aurora-ribbon-3"></div>
+        <div class="aurora-ribbon aurora-ribbon-4"></div>
+    </div>
+
+    <!-- 배경 장식용 떠다니는 도형들 -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <div class="card-container">
+        <div class="card" id="myCard">
+
+            <!-- ==================== 앞면: 명함 ==================== -->
+            <div class="card-face card-front">
+                <!-- 홀로그래픽 쉬머 오버레이 -->
+                <div class="holo-overlay"></div>
+
+                <div class="profile-image">
+                    <img src="avatar.png" alt="양예림 프로필 캐릭터">
+                </div>
+
+                <h1 class="name">양예림</h1>
+                <p class="title-badge">IT강사</p>
+                <p class="subtitle">AI 사무자동화 전문가</p>
+
+                <div class="contact-list">
+                    <a href="mailto:inchoriya@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>inchoriya@gmail.com</span>
+                    </a>
+                    <a href="tel:010-1122-1122" class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>010-1122-1122</span>
+                    </a>
+                    <div class="contact-item">
+                        <span class="contact-icon">🤖</span>
+                        <span>AI로 업무 시간을 90% 단축</span>
+                    </div>
+                </div>
+
+                <button class="flip-btn" id="flipToResume" onclick="flipCard()">
+                    <span>이력서 보기</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- ==================== 뒷면: 이력서 ==================== -->
+            <div class="card-face card-back">
+                <!-- 홀로그래픽 쉬머 오버레이 -->
+                <div class="holo-overlay"></div>
+
+                <div class="resume-header">
+                    <h2 class="resume-name">황인철</h2>
+                    <span class="resume-badge">RESUME</span>
+                </div>
+
+                <div class="resume-scroll">
+                    <!-- 핵심 역량 -->
+                    <div class="resume-section">
+                        <h3 class="section-label">
+                            <span class="label-dot"></span>
+                            핵심 역량
+                        </h3>
+                        <div class="experience-card">
+                            <div class="skill-chips">
+                                <span class="chip highlight">PPT 자동 생성</span>
+                                <span class="chip highlight">반복 수작업 제로화</span>
+                                <span class="chip highlight">AI 프롬프트 설계</span>
+                                <span class="chip highlight">에이전트 제어</span>
+                                <span class="chip highlight">보고서 자동화</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI 사무자동화 역량 상세 -->
+                    <div class="resume-section">
+                        <h3 class="section-label">
+                            <span class="label-dot"></span>
+                            AI 사무자동화 실무
+                        </h3>
+                        <div class="experience-card">
+                            <div class="exp-title">AI 에이전트(Antigravity) 활용 전문가</div>
+                            <ul class="exp-list">
+                                <li>매출 데이터 기반 <strong>PPT 자동 생성</strong> 시스템 구축</li>
+                                <li>PDF 서류 자동 병합, 이미지 일괄 가공으로 <strong>반복 업무 자동화</strong></li>
+                                <li>사내 양식 맞춤형 <strong>전용 AI 프롬프트</strong> 가이드 설계</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 교육 이수 -->
+                    <div class="resume-section">
+                        <h3 class="section-label">
+                            <span class="label-dot"></span>
+                            최신 교육
+                        </h3>
+                        <div class="experience-card">
+                            <div class="exp-title">AI 에이전트를 활용한 사무자동화 실무</div>
+                            <p class="exp-desc">최신 AI 기술을 조작하여 기업의 실무 시간을 획기적으로 단축시키는 맞춤형 업무 자동화 시스템 구축 역량 확보</p>
+                        </div>
+                    </div>
+
+                    <!-- 이전 경력 -->
+                    <div class="resume-section">
+                        <h3 class="section-label">
+                            <span class="label-dot"></span>
+                            경력
+                        </h3>
+                        <div class="experience-card">
+                            <div class="exp-title">OO 회사</div>
+                            <div class="exp-role">경영지원 / 사무 · 20XX ~ 20XX</div>
+                            <p class="exp-desc">꼼꼼한 업무 처리 능력을 바탕으로 탄탄한 기본기를 갖추었으며, 최신 AI 기술을 접목하여 현업에 즉각적인 효율을 더할 준비 완료.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="flip-btn" id="flipToCard" onclick="flipCard()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5" />
+                        <path d="m12 19-7-7 7-7" />
+                    </svg>
+                    <span>명함 보기</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
